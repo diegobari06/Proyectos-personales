@@ -1,0 +1,21 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @omment.user %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @omment.article %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @omment.body %>
+</p>
+
+<%= link_to 'Edit', edit_omment_path(@omment) %> |
+<%= link_to 'Back', omments_path %>

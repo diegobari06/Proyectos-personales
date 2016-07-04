@@ -1,0 +1,26 @@
+<%=
+form_for([@article,@omment], remote: true,html: {id: "omments-form", :"data-type" => "json"}) do |f| %>
+<% if @omment.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(@omment.errors.count, "error") %>
+        prohibited this omment from being saved:</h2>
+
+    <ul>
+        <% @omment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+    </ul>
+</div>
+<% end %>
+
+<div class="col-md-12">
+    <div class="field">
+        <%= f.label :body %><br>
+        <%= f.text_area :body %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+</div>
+
+<% end %>

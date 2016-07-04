@@ -1,0 +1,14 @@
+<div  class="post-container "  style="width:80%; margin: 0 auto;">
+
+<p id="notice"><%= notice %></p>
+<h1 style="color: <%= @category.color %>;"><%= @category.name %></h1>
+
+<div class="row">
+
+  <%= render  @articles%>
+    <%= will_paginate @articles%>
+</div>
+<%= link_to 'Edit', edit_category_path(@category) %>
+
+
+</div>

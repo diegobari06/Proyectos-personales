@@ -1,0 +1,71 @@
+<div class="post-container dark" style="width:80%; margin: 0 auto; overflow-y: scroll">
+    <article class="bottom-space">
+        <div class="row center-xs">
+            <div class="col-xs-12 light-border col-md-12">
+                <h1 class="be-big blue"><%= @article.title%></h1>
+                <p class="text-center be-small">
+                    <%unless @article.user.nil?%>
+                    Escrito por:
+                    <%= @article.user.email%>
+                    <%end%>
+                    / en
+                    <% @article.categories.each do |category|%>
+                    <%=link_to category.name, category,style:"color:#{category.color};" %>
+                    <%end%>
+                </p>
+                <div class="text-justify">
+                    <%=Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe%>
+                </div>
+                <div>
+                    <%=render "articles/comments"%>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </article>
+</div>
+<!--
+<div style="width:80%; margin: 0 auto;">
+
+<h1><%= @article.title%></h1>
+<% unless @article.user.nil?%>
+<p>
+  Escrito por: <%= @article.user.email%>
+</p>
+
+<%end%>
+<div class="field">
+  <% @article.categories.each do |category|%>
+  <%=link_to category.name, category,style:"color:#{category.color};" %>
+    <%end%>
+</div>
+ <div class="field">
+  <%= image_tag @article.cover.url()%>
+</div>
+
+<div>
+  <%=Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe%>
+</div>
+
+
+<div class="field">
+  <h3>Comentarios</h3>
+  <%= render "omments/form"%>
+  <ul id="comments-box">
+
+<% @article.omments.each do |comment|%>
+
+  <li>
+      <%= comment.body%> - <%= comment.user.email%>
+    </li>
+    <%end%>
+    </ul>
+</div>
+
+<div>
+ <%=link_to "Editar", edit_article_path(@article)%>
+</div>
+</div>  -->

@@ -1,0 +1,121 @@
+body,
+html {
+    margin: 0;
+    font-family: roboto;
+    color: white;
+    width: 100%;
+}
+.red {
+    color: red !important;
+}
+.background {
+    background: url("http://www.cometcore.com/wp-content/uploads/2015/08/main1.jpg") no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+a,
+a:visited {
+    color: inherit !important;
+    text-decoration: none;
+}
+.btn {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 12px;
+}
+.actions,
+.field,
+.top-space {
+    margin-top: 1em;
+}
+.text-left {
+    text-align: left;
+}
+#logo {
+    font-size: 1.2em;
+}
+.no-margin {
+    margin: 0;
+}
+.be-red {
+    background-color: #151515;
+    opacity: 0.9;
+}
+.white {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.text-center {
+    text-align: center;
+    padding-top: 2px;
+}
+.large-padding {
+    padding: 8px 5px;
+}
+.form-control {
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.background-cover {
+    background-position: center;
+    background-size: cover;
+    width: 340px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.text-right {
+    text-align: right;
+}
+.center{
+  margin: 0 auto;
+}
+.text-justify {
+    text-align: justify;
+    font-size: 17px;
+    width: 900px;
+    min-height: 100px;
+}
+.be-big {
+    font-size: 2em;
+}
+.be-small {
+    font-size: 1em;
+}
+.top_spacing {
+    margin-bottom: 40px;
+}
+.article-height {
+    height: 100px;
+}
+.post-container {
+    background-color: #151515;
+    background: rgba(0, 0, 0, 0.4);
+    height: 500px;
+    padding: 10px 40px 0 50px;
+  
+}
+
+.dark {
+    background: rgba(0, 0, 0, 0.7);
+}
