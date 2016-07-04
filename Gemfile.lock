@@ -106,6 +106,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    pg (0.18.4-x86-mingw32)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -196,6 +197,7 @@ DEPENDENCIES
   jquery-turbolinks
   masonry-rails (~> 0.2.0)
   paperclip
+  pg
   rails (= 4.2.5.1)
   sanitize
   sass-rails (~> 5.0)
